@@ -1,0 +1,173 @@
+// Common styles of the project
+
+html, body {
+	min-height: 100%;
+
+	&.popup_active {
+		overflow: hidden;
+		height: 100%;
+	}
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	margin: 0 auto;
+	max-width: 1920px;
+	min-width: 320px;	
+	font-family: $or;
+	font-size: 18px;
+	color: $txt;	
+	-webkit-overflow-scrolling:touch;
+	text-decoration-skip-ink: none;
+	background: url('%=static=%general/header-bg-one.svg') no-repeat, url('%=static=%general/header-bg-two.svg') no-repeat, url('%=static=%general/header-bg-three.svg') no-repeat;
+	background-size: 590px 1225px, 593px 1258px, 590px 1225px;
+	background-position: 0 17.5%, 100% 46.5%, 0 79%;
+	background-color: #F5FAFF;
+}
+
+// отмена hover
+// pointer-events:none;
+
+input,
+button,
+textarea {
+	border-radius: 0;
+	-webkit-appearance: none;
+	outline: none !important;
+
+	&:hover,
+	&:active,
+	&:focus,
+	&:visited {
+		outline: none !important;
+	}
+}
+
+a,
+button, {
+	transition: all 0.25s ease;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&:focus {
+	}
+}
+
+a {
+	&:active,
+	&:focus,
+	&:visited {
+		text-decoration: none;
+	}
+}
+
+* {
+	outline: none !important;
+}
+
+img {
+	max-width: 100%
+}
+
+// * { 
+// 	min-height: 0;
+// 	min-width: 0
+// } 
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+}
+
+form {
+	
+}
+
+input {
+	border: none;
+	white-space: nowrap;
+	text-overflow: ellipsis!important;
+	background-color: transparent;
+}
+
+.container-fluid {
+	max-width: 1210px;
+}
+
+::-webkit-input-placeholder {
+	// font-size: 16px;
+	// font-family: $gl;
+	// font-size: 13.89px;
+	color: #737373;
+}
+
+::-moz-placeholder          {
+	// font-size: 16px;
+	// font-family: $gl;
+	// font-size: 13.89px;
+	color: #737373;
+}
+
+:-moz-placeholder           {
+	// font-size: 16px;
+	// font-family: $gl;
+	// font-size: 13.89px;
+	color: #fff;
+}
+
+:-ms-input-placeholder      {
+	// font-size: 16px;
+	// font-family: $gl;
+	// font-size: 13.89px;
+	color: #737373;
+}
+
+// .page {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
+// .page-content {
+//   flex: 1 0 auto;
+// }
+
+// .page__footer {
+// 	flex: 0 0 auto;
+// 	margin-top: 70px;
+// 	padding: 45px 0 35px;
+// 	background-color: #59647c;
+// }
+
+*.t {
+	background-color: tomato;
+}
+
+.wrap-sm {
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;
+}
+
+.site-text {
+	display: block;
+	line-height: 1.7;
+
+	&_sm {
+		display: block;
+		font-size: 16px;
+		line-height: 1.5;
+	}
+}
+
+.hidden {
+	display: none;
+}

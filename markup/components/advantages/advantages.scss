@@ -1,0 +1,104 @@
+.advantages {
+	padding-top: 70px;
+	&__descr {
+		display: block;
+		max-width: 580px;
+		margin-bottom: 20px;
+	}
+}
+
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.advantage {
+	position: relative;
+	width: 47%;
+	margin: 20px 0 30px;
+	padding-left: 40px;
+
+	&__icon {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		left: 0;
+		top: 50%;
+		width: 70px;
+		transform: translateY(-50%);
+	}
+
+	&__content {
+		height: 100%;
+		padding: 30px 30px 35px 60px;
+		border-radius: 10px;
+		background: #FFFFFF;
+		box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
+	}
+
+	&__title {
+		display: block;
+		margin-bottom: 10px;
+		font-family: $mb;
+		font-size: 18px;
+		line-height: 1.2em;
+	}
+}
+
+.practice {
+	display: inline-block;
+	@include bg-svg($practice)
+}
+
+.spanich {
+	display: inline-block;
+	@include bg-svg($spanich)
+}
+
+.experience {
+	display: inline-block;
+	@include bg-svg($experience)
+}
+
+.insurance {
+	display: inline-block;
+	@include bg-svg($insurance)
+}
+
+@media (max-width: 991.98px) {
+	.advantages {
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.advantage {
+		width: 100%;
+		margin: 20px 0 0;
+
+		&__title {
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 479.98px) {
+	.advantages__descr {
+		margin: 0;
+	}
+
+	.advantage {
+		&__content {
+			padding: 20px 20px 25px 40px;
+		}
+
+		&__icon {
+			transform: translateY(-50%) scale(0.7);
+		}
+	}
+}

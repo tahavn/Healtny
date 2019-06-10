@@ -1,0 +1,35 @@
+// 100 - thin
+// 200 - extra light (ultra light)
+// 300 - light
+// 400 - regular
+// 500 - medium
+// 600 - semi bold
+// 700 - bold
+// 800 - extra bold
+// 900 - black
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    font-display: auto;
+    src: url('../fonts/OpenSansRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+@font-face {
+    font-family: 'OpenSansBold';
+    font-display: auto;
+    src: url('../fonts/OpenSansBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/MontserratBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;       // For normal width. It could has another value   
+    font-style: normal;     // Also could has another value
+    }
