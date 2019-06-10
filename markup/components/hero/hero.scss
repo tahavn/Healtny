@@ -1,6 +1,8 @@
 .hero-wrap {
 	display: flex;
 	justify-content: space-between;
+	-ms-justify-content: space-between;
+	    width: 100%;
 	flex-wrap: wrap;
 	margin-top: 40px;	
 }
@@ -11,9 +13,6 @@
 	}
 
 	&__text-wrap {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
 		padding: 25px 25px 0 95px;
 	}
 

@@ -6,7 +6,7 @@
 	background-image: url('%=static=%general/stars-wrap.svg');
 	background-repeat: no-repeat;
 	-webkit-background-size: auto;
-	background-size: 253px auto;
+	background-size: 253px 19px;
 
 	&.stars-0 {
 		background-position: -130px 0px;
@@ -37,8 +37,6 @@
 	padding: 100px 0 50px;
 	&__content {
 		position: relative;
-		display: flex;
-		justify-content: flex-end;
 		margin-top: 40px;
 
 		&:before {
@@ -125,6 +123,7 @@
 
 	&__slider {
 		max-width: 780px;
+		margin-left: auto;
 	}
 
 	&__item {
