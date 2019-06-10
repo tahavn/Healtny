@@ -321,5 +321,27 @@
 		width: 100%;
 		min-width: auto;
 	}
+
+	.pushy{
+		width: 100%;
+	}
+
+	.pushy-left{
+		transform: translate3d(-100%,0,0);
+	}
+
+	.pushy-open-left #container,
+	.pushy-open-left .push {
+		transform: translate3d(100%, 0, 0);
+	}
+
+	.pushy-right {
+		transform: translate3d(100%, 0, 0);
+	}
+
+	.pushy-open-right #container,
+	.pushy-open-right .push {
+		transform: translate3d(-100%, 0, 0);
+	}
 }
 
